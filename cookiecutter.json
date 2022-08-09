@@ -1,0 +1,9 @@
+{
+    "project_name": "Projeto Teste",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "project_version": "0.0.1",
+    "project_description": "Projeto criado via cookiecutter",
+    "full_name": "Giancarlo Lester",
+    "email": "gatobugado.dev@gmail.com",
+    "vscode_settings": "y"
+}
