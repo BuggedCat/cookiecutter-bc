@@ -13,11 +13,12 @@ def check_project_slug(project_slug: str) -> None:
         raise ValueError("Project slug should be all lowercase")
 
 
-def check_vscode_settings(vscode_settings: str) -> None:
-    if vscode_settings.lower() not in ["y", "n", "yes", "no"]:
+def check_yes_or_no_option(option: str) -> None:
+    if option.lower() not in ["y", "n", "yes", "no"]:
         raise ValueError("Vscode Settings option must be ['y', 'n', 'yes', 'no']")
 
 
 if __name__ == "__main__":
     check_project_slug("{{ cookiecutter.project_slug }}")
-    check_vscode_settings("{{ cookiecutter.vscode_settings }}")
+    check_yes_or_no_option("{{ cookiecutter.vscode_settings }}")
+    check_yes_or_no_option("{{ cookiecutter.poetry_env_in_project }}")

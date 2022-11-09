@@ -5,5 +5,6 @@
     "project_description": "Projeto criado via cookiecutter",
     "full_name": "Giancarlo Lester",
     "email": "gatobugado.dev@gmail.com",
-    "vscode_settings": "y"
+    "vscode_settings": "y",
+    "poetry_env_in_project": "y"
 }
